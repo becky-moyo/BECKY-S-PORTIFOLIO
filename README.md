@@ -19,7 +19,7 @@ Visit the live site: [Portfolio Website](https://yourusername.github.io/BECKY-S-
 
 ## 📧 Contact
 - Email: bhekinkosipraisem@gmail.com
-- GitHub: [Your GitHub Profile](https://github.com/)
+- GitHub: [Bhekinkosi P Moyo](https://github.com/)
 - WhatsApp: +263787459664
 
 ## 🎓 Education & Certifications
