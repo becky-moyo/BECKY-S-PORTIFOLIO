@@ -1,0 +1,620 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Academic Transcript - Bhekinkosi Praise Moyo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📜</text></svg>">
+    
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .transcript-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        
+        .transcript-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #2c98f0;
+        }
+        
+        .transcript-header h1 {
+            color: #2c98f0;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .student-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .student-info h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .info-item {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 10px;
+        }
+        
+        .semester-section {
+            margin-bottom: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .semester-header {
+            background: linear-gradient(135deg, #2c98f0 0%, #667eea 100%);
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+        
+        .semester-header h4 {
+            color: white;
+            margin: 0;
+            font-size: 1.3rem;
+        }
+        
+        .modules-table {
+            width: 100%;
+            margin: 0;
+        }
+        
+        .modules-table th {
+            background: #e9ecef;
+            color: #495057;
+            font-weight: 600;
+            padding: 15px 10px;
+            border: none;
+        }
+        
+        .modules-table td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #dee2e6;
+            vertical-align: middle;
+        }
+        
+        .modules-table tr:hover {
+            background: #f1f3f4;
+        }
+        
+        .grade-excellent {
+            background: #28a745;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .grade-good {
+            background: #17a2b8;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .grade-average {
+            background: #ffc107;
+            color: #212529;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .decision-pass {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        
+        .back-button .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .back-button .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        .status-in-progress {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+        
+        @media (max-width: 768px) {
+            .transcript-container {
+                margin: 20px;
+                padding: 20px;
+            }
+            
+            .info-row {
+                flex-direction: column;
+            }
+            
+            .modules-table {
+                font-size: 0.9rem;
+            }
+            
+            .modules-table th,
+            .modules-table td {
+                padding: 8px 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back-button">
+        <a href="index.html" class="btn">
+            <i class="icon-arrow-left"></i> Back to Portfolio
+        </a>
+    </div>
+
+    <div class="transcript-container">
+        <div class="transcript-header">
+            <h1>Academic Transcript</h1>
+            <p style="color: #666; font-size: 1.1rem;">Official Academic Record</p>
+        </div>
+
+        <div class="student-info">
+            <h3><i class="icon-user"></i> Student Information</h3>
+            <div class="info-row">
+                <div class="info-item">
+                    <strong>Registration #:</strong> R227075Y
+                </div>
+                <div class="info-item">
+                    <strong>Surname:</strong> MOYO
+                </div>
+            </div>
+            <div class="info-row">
+                <div class="info-item">
+                    <strong>First Names:</strong> BHEKINKOSI PRAISE
+                </div>
+                <div class="info-item">
+                    <strong>Programme Code:</strong> BS08
+                </div>
+            </div>
+            <div class="info-row">
+                <div class="info-item">
+                    <strong>Programme:</strong> BACHELOR OF COMMERCE HONOURS DEGREE IN DATA SCIENCE AND INFORMATICS
+                </div>
+            </div>
+            <div class="info-row">
+                <div class="info-item">
+                    <strong>Attendance Type:</strong> Conventional
+                </div>
+                <div class="info-item">
+                    <strong>Status:</strong> <span class="status-badge status-in-progress">In Progress</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Year 1 Semester 1 -->
+        <div class="semester-section">
+            <div class="semester-header">
+                <h4>Year 1 - Semester 1 (April 2022 - July 2022)</h4>
+                <p style="margin: 5px 0 0 0; opacity: 0.9;">Decision: PENDING</p>
+            </div>
+            <table class="table modules-table">
+                <thead>
+                    <tr>
+                        <th>Module Code</th>
+                        <th>Module Name</th>
+                        <th>Class</th>
+                        <th>Decision</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>CS131</strong></td>
+                        <td>BASIC COMMUNICATION SKILLS</td>
+                        <td><span class="grade-good">2.2</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI131</strong></td>
+                        <td>INTRODUCTION TO INFORMATICS</td>
+                        <td><span class="grade-good">2.1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI132</strong></td>
+                        <td>FOUNDATIONS OF DATA SCIENCE</td>
+                        <td><span class="grade-good">2.1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI133</strong></td>
+                        <td>HUMAN-COMPUTER INTERACTION PRINCIPLES AND PRACTICES</td>
+                        <td><span class="grade-good">2.1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI135</strong></td>
+                        <td>COMPUTER ARCHITECTURE AND ORGANISATION</td>
+                        <td><span class="grade-average">3</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI134</strong></td>
+                        <td>PRINCIPLES OF PROGRAMMING LANGUAGES</td>
+                        <td><span class="grade-good">2.1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI136</strong></td>
+                        <td>DATA STRUCTURES AND ALGORITHMS</td>
+                        <td><span class="grade-good">2.2</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Year 1 Semester 2 -->
+        <div class="semester-section">
+            <div class="semester-header">
+                <h4>Year 1 - Semester 2 (August 2022 - December 2022)</h4>
+                <p style="margin: 5px 0 0 0; opacity: 0.9;">Decision: PROCEED</p>
+            </div>
+            <table class="table modules-table">
+                <thead>
+                    <tr>
+                        <th>Module Code</th>
+                        <th>Module Name</th>
+                        <th>Class</th>
+                        <th>Decision</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>DSI137</strong></td>
+                        <td>COMPUTER-INFORMATION ETHICS, SOCIAL INFORMATICS, AND DATA GOVERNANCE</td>
+                        <td><span class="grade-good">2.1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI138</strong></td>
+                        <td>MATHEMATICAL FOUNDATIONS OF DATA SCIENCE AND INFORMATICS</td>
+                        <td><span class="grade-good">2.1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI139</strong></td>
+                        <td>INTRODUCTION TO PYTHON</td>
+                        <td><span class="grade-good">2.1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI140</strong></td>
+                        <td>INFORMATION INFRASTRUCTURE 1</td>
+                        <td><span class="grade-excellent">1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI141</strong></td>
+                        <td>NATURAL LANGUAGE PROCESSING</td>
+                        <td><span class="grade-excellent">1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI142</strong></td>
+                        <td>OPERATING SYSTEMS</td>
+                        <td><span class="grade-good">2.1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI143</strong></td>
+                        <td>FUNDAMENTALS OF DATA WAREHOUSE AND DATA MINING</td>
+                        <td><span class="grade-excellent">1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Year 2 Semester 1 - First Quarter -->
+        <div class="semester-section">
+            <div class="semester-header">
+                <h4>Year 2 - Semester 1, First Quarter (March 2023 - June 2023)</h4>
+            </div>
+            <table class="table modules-table">
+                <thead>
+                    <tr>
+                        <th>Module Code</th>
+                        <th>Module Name</th>
+                        <th>Class</th>
+                        <th>Decision</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ENT131</strong></td>
+                        <td>ENTREPRENEURSHIP 1</td>
+                        <td><span class="grade-average">3</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>GSB211</strong></td>
+                        <td>GENDER STUDIES FOR BUSINESS</td>
+                        <td><span class="grade-good">2.1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI232</strong></td>
+                        <td>INFORMATION SYSTEMS ANALYSIS, DESIGN AND DEVELOPMENT METHODOLOGIES</td>
+                        <td><span class="grade-good">2.2</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI234</strong></td>
+                        <td>INFORMATION REPRESENTATION</td>
+                        <td><span class="grade-excellent">1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Year 2 Semester 1 - Second Quarter -->
+        <div class="semester-section">
+            <div class="semester-header">
+                <h4>Year 2 - Semester 1, Second Quarter (March 2023 - June 2023)</h4>
+                <p style="margin: 5px 0 0 0; opacity: 0.9;">Decision: PENDING</p>
+            </div>
+            <table class="table modules-table">
+                <thead>
+                    <tr>
+                        <th>Module Code</th>
+                        <th>Module Name</th>
+                        <th>Class</th>
+                        <th>Decision</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>DSI231</strong></td>
+                        <td>INTRODUCTION TO RESEARCH IN DATA SCIENCE AND INFORMATICS</td>
+                        <td><span class="grade-excellent">1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI233</strong></td>
+                        <td>ENTERPRISE ARCHITECTURE</td>
+                        <td><span class="grade-excellent">1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI235</strong></td>
+                        <td>MACHINE LEARNING I: USING PYTHON</td>
+                        <td><span class="grade-excellent">1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Year 2 Semester 2 - Third Quarter -->
+        <div class="semester-section">
+            <div class="semester-header">
+                <h4>Year 2 - Semester 2, Third Quarter (September 2023 - December 2023)</h4>
+            </div>
+            <table class="table modules-table">
+                <thead>
+                    <tr>
+                        <th>Module Code</th>
+                        <th>Module Name</th>
+                        <th>Class</th>
+                        <th>Decision</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>DSI237</strong></td>
+                        <td>STATISTICAL ANALYSIS</td>
+                        <td><span class="grade-excellent">1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI240</strong></td>
+                        <td>R PROGRAMMING AND COMPUTER VISION</td>
+                        <td><span class="grade-excellent">1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Year 2 Semester 2 - Fourth Quarter -->
+        <div class="semester-section">
+            <div class="semester-header">
+                <h4>Year 2 - Semester 2, Fourth Quarter (September 2023 - December 2023)</h4>
+                <p style="margin: 5px 0 0 0; opacity: 0.9;">Decision: PROCEED</p>
+            </div>
+            <table class="table modules-table">
+                <thead>
+                    <tr>
+                        <th>Module Code</th>
+                        <th>Module Name</th>
+                        <th>Class</th>
+                        <th>Decision</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>DSI236</strong></td>
+                        <td>INTRODUCTION TO MEDIA APPLICATION DEVELOPMENT</td>
+                        <td><span class="grade-good">2.2</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI238</strong></td>
+                        <td>ORGANISATIONAL INFORMATICS</td>
+                        <td><span class="grade-good">2.1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI239</strong></td>
+                        <td>DATA SCIENCE AND INFORMATICS PROJECT 1</td>
+                        <td><span class="grade-good">2.1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Year 3 Work Related Learning -->
+        <div class="semester-section">
+            <div class="semester-header">
+                <h4>Year 3 - Work Related Learning (February 2024 - November 2024)</h4>
+                <p style="margin: 5px 0 0 0; opacity: 0.9;">Decision: PROCEED</p>
+            </div>
+            <table class="table modules-table">
+                <thead>
+                    <tr>
+                        <th>Module Code</th>
+                        <th>Module Name</th>
+                        <th>Class</th>
+                        <th>Decision</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>DSI340</strong></td>
+                        <td>WORK RELATED LEARNING PRELIMINARY REPORT</td>
+                        <td><span class="grade-excellent">1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI341</strong></td>
+                        <td>WORK RELATED LEARNING CONTINUOUS ASSESSMENT</td>
+                        <td><span class="grade-excellent">1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI342</strong></td>
+                        <td>WORK RELATED LEARNING REPORT</td>
+                        <td><span class="grade-excellent">1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Year 4 Current Semester -->
+        <div class="semester-section">
+            <div class="semester-header">
+                <h4>Year 4 - Semester 1 (February 2025 - June 2025)</h4>
+                <p style="margin: 5px 0 0 0; opacity: 0.9;">Current Semester - Decision: PENDING</p>
+            </div>
+            <table class="table modules-table">
+                <thead>
+                    <tr>
+                        <th>Module Code</th>
+                        <th>Module Name</th>
+                        <th>Class</th>
+                        <th>Decision</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>DSI433</strong></td>
+                        <td>ADVANCED DATA WAREHOUSE AND DATA MINING</td>
+                        <td><span class="grade-excellent">1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI435</strong></td>
+                        <td>APPLIED CLOUD COMPUTING FOR DATA-INTENSIVE SCIENCES</td>
+                        <td><span class="grade-excellent">1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI431</strong></td>
+                        <td>DATA SCIENCE AND INFORMATICS PROJECT MANAGEMENT</td>
+                        <td><span class="grade-excellent">1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI432</strong></td>
+                        <td>INFORMATION INFRASTRUCTURE 2: OOP</td>
+                        <td><span class="grade-good">2.1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>DSI434</strong></td>
+                        <td>OPTIMISATION TECHNIQUES WITH NUMPY AND SCIPY</td>
+                        <td><span class="grade-good">2.1</span></td>
+                        <td><span class="decision-pass">P</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+            <p style="color: #666; margin: 0;"><em>This transcript reflects academic performance as of the current semester. Final grades and completion status are subject to ongoing coursework and examinations.</em></p>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
