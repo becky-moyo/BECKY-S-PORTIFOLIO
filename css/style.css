@@ -503,6 +503,21 @@ body.offcanvas {
   margin-top: 5px;
   border: 1px solid #e6e6e6 !important; }
 
+.education-skills-title {
+  margin: 15px 0 10px;
+  font-weight: 600;
+  color: #2c98f0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px; }
+
+.education-skills {
+  margin: 0 0 10px 0;
+  padding-left: 18px; }
+  .education-skills li {
+    margin-bottom: 6px;
+    color: rgba(0, 0, 0, 0.7); }
+
 .timeline-centered {
   position: relative;
   margin-bottom: 30px; }
