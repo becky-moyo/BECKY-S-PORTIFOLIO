@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Analytical Banking Platform | Bhekinkosi Praise Moyo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Case study for an Analytical Banking Platform using LSTM, Isolation Forest, and Random Forest models for behavioral profiling and anomaly detection.">
+	<meta property="og:title" content="Analytical Banking Platform | Bhekinkosi Praise Moyo">
+	<meta property="og:description" content="A banking intelligence case study for anomaly detection, behavioral analytics, and suspicious activity monitoring.">
+	<meta property="og:image" content="../images/img-3.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/icomoon.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<style>
+		body { background: #f7f9fc; }
+		.case-hero { background-image: linear-gradient(rgba(28, 33, 43, .8), rgba(28, 33, 43, .8)), url("../images/img-3.jpg"); background-size: cover; background-position: center; color: #fff; padding: 90px 0; }
+		.case-hero h1 { color: #fff; font-size: 42px; margin-bottom: 18px; }
+		.case-section { padding: 55px 0; }
+		.case-panel { background: #fff; border-radius: 6px; padding: 28px; margin-bottom: 24px; box-shadow: 0 8px 28px rgba(0,0,0,.06); }
+		.case-panel h2 { font-size: 24px; margin-top: 0; }
+		.badge-list span { display: inline-block; background: #2c98f0; color: #fff; border-radius: 4px; padding: 8px 12px; margin: 0 8px 8px 0; font-size: 13px; }
+		.metric { border-left: 4px solid #2c98f0; padding-left: 16px; margin-bottom: 18px; }
+		.case-visual { width: 100%; border-radius: 6px; margin-bottom: 16px; }
+	</style>
+</head>
+<body>
+	<header class="case-hero">
+		<div class="container">
+			<p><a href="../index.html#work" style="color:#fff;">Back to Portfolio</a></p>
+			<h1>Analytical Banking Platform</h1>
+			<p>Banking intelligence prototype for behavioral profiling, anomaly detection, and suspicious activity monitoring.</p>
+			<p>
+				<a class="btn btn-primary" href="https://github.com/becky-moyo/analytical-banking-platform" target="_blank">GitHub</a>
+				<a class="btn btn-default" href="#demo">Demo Notes</a>
+			</p>
+		</div>
+	</header>
+	<main class="case-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="case-panel">
+						<h2>Problem Statement</h2>
+						<p>Financial institutions need early visibility into unusual behavior, suspicious activity, and risk patterns hidden in transaction data. This platform demonstrates an analytics workflow for detecting anomalies and summarizing risk signals for operational teams.</p>
+					</div>
+					<div class="case-panel">
+						<h2>Dataset</h2>
+						<p>The platform is designed for transaction-level banking data including customer IDs, transaction amounts, timestamps, merchant or channel categories, location signals, balance movement, and historical behavior windows.</p>
+					</div>
+					<div class="case-panel">
+						<h2>Methodology</h2>
+						<p>The workflow combines sequence modeling with LSTM for temporal behavior, Isolation Forest for unsupervised anomaly detection, and Random Forest for supervised risk classification. Dashboard views translate model outputs into alerts, customer behavior summaries, and trend reports.</p>
+					</div>
+					<div class="case-panel">
+						<h2>Results</h2>
+						<div class="metric"><strong>Detection output:</strong> anomaly scores, flagged transactions, and suspicious behavior categories.</div>
+						<div class="metric"><strong>Analytics output:</strong> customer behavior profiles, risk summaries, and monitoring dashboards.</div>
+						<div class="metric"><strong>Business value:</strong> earlier risk visibility and stronger evidence for investigation workflows.</div>
+					</div>
+					<div class="case-panel" id="demo">
+						<h2>Screenshots and Demo</h2>
+						<img class="case-visual" src="../images/img-3.jpg" alt="Analytical banking platform project visual">
+						<p>The demo flow can be connected here once deployed. The intended prototype includes dashboard review, anomaly filtering, model output inspection, and exportable investigation summaries.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="case-panel">
+						<h2>Tech Stack</h2>
+						<p class="badge-list"><span>Python</span><span>LSTM</span><span>Isolation Forest</span><span>Random Forest</span><span>Pandas</span><span>Scikit-learn</span><span>Dashboards</span></p>
+					</div>
+					<div class="case-panel">
+						<h2>Project Links</h2>
+						<p><a href="https://github.com/becky-moyo/analytical-banking-platform" target="_blank">GitHub Repository</a></p>
+						<p><a href="#demo">Prototype Demo Notes</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

@@ -1,876 +1,298 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
+<!doctype html>
+<html lang="en">
+<head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>portifolio@bhekinkosipraisemoyo</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+	<meta name="description" content="Bhekinkosi Praise Moyo is a data scientist focused on machine learning, NLP, analytics, BI, and practical data products. Explore case studies, skills, experience, and contact details.">
+	<meta name="keywords" content="Bhekinkosi Praise Moyo, data scientist, machine learning, NLP, FinBERT, KNN, LSTM, Python, analytics, Zimbabwe">
+	<meta name="author" content="Bhekinkosi Praise Moyo">
+	<meta property="og:title" content="Bhekinkosi Praise Moyo | Data Scientist">
+	<meta property="og:description" content="Portfolio of data science, machine learning, NLP, and banking analytics projects by Bhekinkosi Praise Moyo.">
+	<meta property="og:image" content="images/about.jpg">
+	<meta property="og:url" content="https://becky-moyo.github.io/BECKY-S-PORTIFOLIO/">
+	<meta property="og:site_name" content="Bhekinkosi Praise Moyo Portfolio">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Bhekinkosi Praise Moyo | Data Scientist">
+	<meta name="twitter:description" content="Explore Bhekinkosi Praise Moyo's data science portfolio, featuring ML, NLP, analytics, and banking intelligence case studies.">
+	<meta name="twitter:image" content="images/about.jpg">
+	<title>Bhekinkosi Praise Moyo | Data Scientist</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/modern.css">
+</head>
+<body>
+	<div class="loader" data-loader>
+		<div class="loader-mark" aria-hidden="true"></div>
+		<span>Loading portfolio</span>
+	</div>
+	<div class="scroll-progress" data-scroll-progress></div>
 
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+	<header class="site-header" data-header>
+		<a class="brand" href="#home" aria-label="Bhekinkosi Praise Moyo home">
+			<span class="brand-mark">BM</span>
+			<span>Bhekinkosi Moyo</span>
+		</a>
+		<button class="nav-toggle" type="button" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+			<span></span>
+			<span></span>
+		</button>
+		<nav class="site-nav" data-nav>
+			<a href="#about">About</a>
+			<a href="#skills">Skills</a>
+			<a href="#projects">Projects</a>
+			<a href="#experience">Experience</a>
+			<a href="#education">Education</a>
+			<a href="#contact">Contact</a>
+		</nav>
+		<button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark and light mode">
+			<svg data-theme-icon viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M21.75 15.5a.75.75 0 0 1-.1.9 9.75 9.75 0 0 1-13.5 0 .75.75 0 0 1 .8-1.2 8.25 8.25 0 0 0 11.8 0 .75.75 0 0 1 1 .3Zm-1.05-6.3a.75.75 0 0 0 1.05 0 .75.75 0 0 0 0-1.05l-1.5-1.5a.75.75 0 0 0-1.05 1.05l1.5 1.5Zm.3 3.45a.75.75 0 0 0 .75-.75.75.75 0 0 0-.75-.75h-2.1a.75.75 0 0 0 0 1.5h2.1ZM12 6.75a.75.75 0 0 0 .75-.75V3.9a.75.75 0 0 0-1.5 0v2.1c0 .41.34.75.75.75Zm0 10.5a5.25 5.25 0 1 1 0-10.5 5.25 5.25 0 0 1 0 10.5Zm6.6-4.35a.75.75 0 0 0-1.05 1.05l1.5 1.5a.75.75 0 0 0 1.05-1.05l-1.5-1.5Zm-13.2 0-1.5 1.5a.75.75 0 0 0 1.05 1.05l1.5-1.5a.75.75 0 0 0-1.05-1.05Zm-1.5-3.3a.75.75 0 0 0 .75.75h2.1a.75.75 0 0 0 0-1.5H4.65a.75.75 0 0 0-.75.75Zm5.4-3a.75.75 0 1 0-1.05-1.05l-1.5 1.5a.75.75 0 0 0 1.05 1.05l1.5-1.5Z"/></svg>
+		</button>
+	</header>
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
-
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Flaticons  -->
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-	</head>
-	<body>
-	<div id="colorlib-page">
-		<div class="container-wrap">
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-			<div class="text-center">
-				<div class="author-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center;">
-					<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-						<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-						<circle cx="12" cy="7" r="4"></circle>
-					</svg>
+	<main>
+		<section class="hero section-reveal" id="home">
+			<img class="hero-media" src="images/about.jpg" alt="Bhekinkosi Praise Moyo portrait">
+			<div class="hero-overlay"></div>
+			<div class="hero-content">
+				<p class="eyebrow">Data Scientist in Zimbabwe</p>
+				<h1>Bhekinkosi Praise Moyo</h1>
+				<p class="hero-copy">I build practical data products with machine learning, NLP, statistical analysis, and clear business intelligence.</p>
+				<div class="hero-actions">
+					<a class="btn primary" href="docs/curriculumn_vitae%20for%20bhekinkosiPraiseMoyo.pdf" download>Download CV</a>
+					<a class="btn secondary" href="#projects">View Projects</a>
 				</div>
-				<h1 id="colorlib-logo"><a href="index.html">Portifolio</a></h1>
-				<span class="position"><a href="#">Data Scientist</a> in Zimbabwe</span>
+				<div class="social-row" aria-label="Social links">
+					<a href="https://github.com/becky-moyo" target="_blank" rel="noreferrer" aria-label="GitHub">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A12 12 0 0 0 8.2 23.9c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+					</a>
+					<a href="https://www.linkedin.com/in/bhekinkosi-praise-moyo-214553396/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.7c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3v5.8H9.1V8.9h3.5v1.6h.1a3.8 3.8 0 0 1 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5v6.4ZM5 7.3a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2Zm1.8 13.2H3.2V8.9h3.6v11.6ZM22.2 0H1.8C.8 0 0 .8 0 1.8v20.4c0 1 .8 1.8 1.8 1.8h20.4c1 0 1.8-.8 1.8-1.8V1.8c0-1-.8-1.8-1.8-1.8Z"/></svg>
+					</a>
+					<a href="https://api.whatsapp.com/send?phone=263787459664&text=I%20saw%20your%20portfolio%20and%20I%20am%20interested%20in%20hiring%20you" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 1.9 17.7L.5 23.5l5.9-1.5A11.8 11.8 0 0 0 20.5 3.5Zm-8.7 17a9.6 9.6 0 0 1-4.9-1.3l-.4-.2-3.5.9.9-3.4-.2-.4A9.7 9.7 0 1 1 11.8 20.5Zm5.3-7.2c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2l-.9 1.1c-.2.2-.4.2-.7.1a7.9 7.9 0 0 1-3.9-3.4c-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.6l-.9-2c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.7 5.8 5.1 2.2.9 3 .8 4.1.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4Z"/></svg>
+					</a>
+					<a href="mailto:bhekinkosipraisem@gmail.com?subject=I%20am%20interested%20in%20hiring%20you" aria-label="Email">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 17.5v-11Zm2.5-.2 7.5 5.4 7.5-5.4h-15Zm15.3 2.4-7.1 5.1a1.2 1.2 0 0 1-1.4 0L4.2 8.7v8.8c0 .2.1.3.3.3h15c.2 0 .3-.1.3-.3V8.7Z"/></svg>
+					</a>
+				</div>
 			</div>
-			<nav id="colorlib-main-menu" role="navigation" class="navbar">
-				<div id="navbar" class="collapse">
+		</section>
+
+		<section class="section about section-reveal" id="about">
+			<div class="section-heading">
+				<p class="eyebrow">About</p>
+				<h2>Reliable models, useful analysis, clear decisions.</h2>
+			</div>
+			<div class="about-grid">
+				<div class="about-copy">
+					<p>I am a data scientist focused on turning complex data into practical insight, reliable models, and clear decisions. My work combines machine learning, statistical analysis, data visualization, and database skills to solve problems across business, finance, and social-impact contexts.</p>
+					<p>I completed a four-year BSc degree in Data Science and Informatics at Midlands State University, where I built a strong foundation in programming, mathematics, statistics, machine learning, and analytics.</p>
+				</div>
+				<div class="insight-panel">
+					<h3>Professional Philosophy</h3>
+					<p>High-quality data is the foundation of accurate models and meaningful insights. I focus on solutions that are technically sound, understandable to stakeholders, and useful in real-world decisions.</p>
+				</div>
+			</div>
+			<div class="service-strip">
+				<div><strong>Data Analysis</strong><span>Insight, reporting, and interpretation</span></div>
+				<div><strong>ETL</strong><span>Clean pipelines from messy data</span></div>
+				<div><strong>ML and AI</strong><span>Models for prediction and automation</span></div>
+				<div><strong>Visualization</strong><span>Dashboards and stakeholder stories</span></div>
+			</div>
+		</section>
+
+		<section class="section section-reveal" id="skills">
+			<div class="section-heading">
+				<p class="eyebrow">Skills</p>
+				<h2>A practical toolkit for data products.</h2>
+			</div>
+			<div class="skills-grid">
+				<article class="skill-group">
+					<h3>Languages &amp; Tools</h3>
+					<div class="chips"><span>Python</span><span>SQL</span><span>R</span><span>Flask</span><span>Streamlit</span></div>
+				</article>
+				<article class="skill-group">
+					<h3>ML &amp; AI</h3>
+					<div class="chips"><span>Scikit-learn</span><span>TensorFlow</span><span>NLTK</span><span>FinBERT</span><span>KNN</span><span>LSTM</span></div>
+				</article>
+				<article class="skill-group">
+					<h3>Data &amp; BI</h3>
+					<div class="chips"><span>Pandas</span><span>NumPy</span><span>Power BI</span><span>Tableau</span><span>Excel</span><span>SPSS</span></div>
+				</article>
+				<article class="skill-group">
+					<h3>Infrastructure</h3>
+					<div class="chips"><span>Git</span><span>GitHub</span><span>Jupyter</span><span>Google Colab</span><span>Database Management</span><span>ETL Workflows</span></div>
+				</article>
+			</div>
+		</section>
+
+		<section class="section section-reveal" id="projects">
+			<div class="section-heading split">
+				<div>
+					<p class="eyebrow">Projects</p>
+					<h2>Case studies with business context.</h2>
+				</div>
+				<a class="text-link" href="https://github.com/becky-moyo" target="_blank" rel="noreferrer">GitHub Profile</a>
+			</div>
+			<div class="project-grid">
+				<article class="project-card">
+					<img src="images/img-1.jpg" alt="Employee skill gap analysis dashboard visual">
+					<div class="project-content">
+						<p class="project-type">Flask | KNN | NLTK</p>
+						<h3>Employee Skill Gap Analysis</h3>
+						<p>Workforce analytics platform that identifies employee skill gaps and recommends targeted learning paths from job and competency data.</p>
+						<div class="card-actions">
+							<a href="projects/employee-skill-gap-analysis.html">Case Study</a>
+							<a href="https://github.com/becky-moyo/employee-skill-gap-analysis" target="_blank" rel="noreferrer">GitHub</a>
+							<a href="projects/employee-skill-gap-analysis.html#demo">Demo</a>
+						</div>
+					</div>
+				</article>
+				<article class="project-card">
+					<img src="images/img-2.jpg" alt="Banking service analytics visual">
+					<div class="project-content">
+						<p class="project-type">Flask | FinBERT | NLP</p>
+						<h3>Banking Service Platform</h3>
+						<p>Financial service analytics prototype using fine-tuned FinBERT sentiment analysis to evaluate customer feedback and service performance.</p>
+						<div class="card-actions">
+							<a href="projects/banking-service-platform.html">Case Study</a>
+							<a href="https://github.com/becky-moyo/banking-service-platform" target="_blank" rel="noreferrer">GitHub</a>
+							<a href="projects/banking-service-platform.html#demo">Demo</a>
+						</div>
+					</div>
+				</article>
+				<article class="project-card">
+					<img src="images/img-3.jpg" alt="Analytical banking platform visual">
+					<div class="project-content">
+						<p class="project-type">LSTM | Isolation Forest | Random Forest</p>
+						<h3>Analytical Banking Platform</h3>
+						<p>Banking intelligence concept for behavioral profiling, anomaly detection, suspicious activity monitoring, and operational dashboards.</p>
+						<div class="card-actions">
+							<a href="projects/analytical-banking-platform.html">Case Study</a>
+							<a href="https://github.com/becky-moyo/analytical-banking-platform" target="_blank" rel="noreferrer">GitHub</a>
+							<a href="projects/analytical-banking-platform.html#demo">Demo</a>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="section section-reveal" id="experience">
+			<div class="section-heading">
+				<p class="eyebrow">Experience</p>
+				<h2>Data work across research, reporting, and evaluation.</h2>
+			</div>
+			<div class="timeline">
+				<article>
+					<span>January 2024 to December 2024</span>
+					<h3>Strategic Information and Evaluation Officer - Zvandiri PVO</h3>
 					<ul>
-						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-						<li><a href="#" data-nav-section="about">About</a></li>
-						<li><a href="#" data-nav-section="services">Services</a></li>
-						<li><a href="#" data-nav-section="skills">Skills</a></li>
-						<li><a href="#" data-nav-section="education">Education</a></li>
-						<li><a href="#" data-nav-section="experience">Experience</a></li>
-						<li><a href="#" data-nav-section="work">Work</a></li>
-						<li><a href="#" data-nav-section="contact">Contact</a></li>
+						<li>Supported monitoring, evaluation, and reporting workflows across a 12-month Strategic Information and Evaluation role.</li>
+						<li>Tracked research and program progress using data collection, cleaning, analysis, and reporting methods.</li>
+						<li>Prepared evidence for decision-making by organizing field data and translating findings into stakeholder-ready summaries.</li>
 					</ul>
-				</div>
-			</nav>
-
-			<div class="colorlib-footer">
-				<p><small>&copy; Copyright <script>document.write(new Date().getFullYear());</script> All rights reserved.</small></p>
-				<p>Bhekinkosi Praise Moyo</p>
-				<ul>
-					<li><a href="https://api.whatsapp.com/send?phone=263787459664&text=I%20saw%20your%20portfolio%20and%20I%20am%20interested%20in%20hiring%20you" target="_blank" title="WhatsApp"><i class="icon-phone"></i></a></li>
-					<li><a href="mailto:bhekinkosipraisem@gmail.com?subject=I%20am%20interested%20in%20hiring%20you" title="Email"><i class="icon-mail"></i></a></li>
-				</ul>
+				</article>
+				<article>
+					<span>2022 to Present</span>
+					<h3>Researcher - Academic and Community Projects</h3>
+					<ul>
+						<li>Contributed to primary research activities from project start-up through baseline, follow-up, and endline stages.</li>
+						<li>Collected, reviewed, and structured research data to support statistical analysis and evidence-based conclusions.</li>
+						<li>Collaborated with project teams to document methods, summarize findings, and communicate research outcomes clearly.</li>
+					</ul>
+				</article>
+				<article>
+					<span>2022 to 2025</span>
+					<h3>Excel Data Analyst - Data Reporting Projects</h3>
+					<ul>
+						<li>Built spreadsheet-based analysis workflows using PivotTables, Pivot Charts, macros, What-If Analysis, and lookup functions.</li>
+						<li>Cleaned and organized datasets for reporting, trend analysis, and summary dashboards in Excel.</li>
+						<li>Improved reporting accuracy by applying structured formulas, validation checks, and repeatable workbook layouts.</li>
+					</ul>
+				</article>
 			</div>
+		</section>
 
-		</aside>
+		<section class="section section-reveal" id="education">
+			<div class="section-heading">
+				<p class="eyebrow">Education</p>
+				<h2>Formal training and certifications.</h2>
+			</div>
+			<div class="credential-grid">
+				<article><span>2026</span><h3>BCom Data Science and Informatics</h3><p>Midlands State University, first-class degree.</p><a href="transcript.html">View Transcript</a></article>
+				<article><span>2024</span><h3>Introduction to Machine Learning</h3><p>Kaggle certification covering supervised learning, validation, and model improvement.</p><a href="docs/Bhekinkosi%20Moyo%20-%20Intro%20to%20Machine%20Learning.png" target="_blank" rel="noreferrer">View Certificate</a></article>
+				<article><span>2025</span><h3>IBM SkillsBuild AI Fundamentals</h3><p>AI concepts, responsible AI, bias awareness, and use-case identification.</p><a href="docs/AI_Fundamentals_with_IBM_SkillsBuild_certififate.pdf" target="_blank" rel="noreferrer">View Certificate</a></article>
+				<article><span>2026</span><h3>Data Analytics Essentials</h3><p>Data preparation, exploration, visualization, and analytical thinking.</p><a href="docs/DataAnalyticsEssentialsCertification.pdf" target="_blank" rel="noreferrer">View Certificate</a></article>
+			</div>
+		</section>
 
-		<div id="colorlib-main">
-			<section id="colorlib-hero" class="js-fullheight" data-section="home" style="background: linear-gradient(135deg, #667eea 0%, #042fef 100%); position: relative;">
-				<div class="overlay" style="background: rgba(0,0,0,0.3); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
-				<div class="container-fluid js-fullheight">
-					<div class="row js-fullheight">
-						<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 js-fullheight" style="display: flex; align-items: center; justify-content: center;">
-							<div class="hero-content" style="text-align: center; z-index: 2; position: relative;">
-								<h1 style="color: #fff; font-size: 3.5rem; font-weight: 700; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Hi! I'm Bhekinkosi Praise Moyo</h1>
-								<h2 id="typewriter" style="color: #fff; font-size: 1.8rem; font-weight: 400; margin-bottom: 30px; min-height: 60px; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);"></h2>
-								<div class="hero-buttons" style="margin-top: 40px;">
-									<a href="docs/Finale_CV_FOR_Bhekinkosi Praise Moyo___" class="btn btn-primary btn-lg" download style="background: #2c98f0; border: none; padding: 15px 35px; font-weight: 600; border-radius: 5px;">Download CV <i class="icon-download4"></i></a>
-								</div>
-								<div class="social-links" style="margin-top: 30px;">
-									<a href="https://api.whatsapp.com/send?phone=263787459664&text=I%20saw%20your%20portfolio%20and%20I%20am%20interested%20in%20hiring%20you" target="_blank" style="color: #fff; font-size: 24px; margin: 0 15px; transition: all 0.3s ease;" title="WhatsApp"><i class="icon-phone"></i></a>
-									<a href="mailto:bhekinkosipraisem@gmail.com?subject=I%20am%20interested%20in%20hiring%20you" style="color: #fff; font-size: 24px; margin: 0 15px; transition: all 0.3s ease;" title="Email"><i class="icon-mail"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
+		<section class="section section-reveal" id="recommendations">
+			<div class="section-heading">
+				<p class="eyebrow">Recommendations</p>
+				<h2>Signals of how I work.</h2>
+			</div>
+			<div class="quote-grid">
+				<blockquote><p>Bhekinkosi brings structure to messy data problems and communicates technical findings in a way that supports decisions.</p><cite>Research Collaboration Feedback</cite></blockquote>
+				<blockquote><p>His strength is combining analytical discipline with practical reporting tools that teams can actually use.</p><cite>Program Reporting Feedback</cite></blockquote>
+			</div>
+		</section>
+
+		<section class="section section-reveal" id="articles">
+			<div class="section-heading">
+				<p class="eyebrow">Articles</p>
+				<h2>Data science notes in progress.</h2>
+			</div>
+			<div class="article-grid">
+				<article><img src="images/img-4.jpg" alt="Data preparation visual"><h3>Why Clean Data Matters Before Modeling</h3><p>A practical note on data quality, preprocessing, and model reliability.</p></article>
+				<article><img src="images/img-5.jpg" alt="Machine learning visual"><h3>Choosing a Baseline Model</h3><p>How simple models create clarity before complex machine learning workflows.</p></article>
+				<article><img src="images/img-6.jpg" alt="Analytics dashboard visual"><h3>Turning Analysis Into Decisions</h3><p>How visualization and concise reporting help stakeholders act on evidence.</p></article>
+			</div>
+		</section>
+
+		<section class="section cv-preview section-reveal" id="cv">
+			<div class="section-heading split">
+				<div>
+					<p class="eyebrow">CV Preview</p>
+					<h2>Review or download my CV.</h2>
 				</div>
-			</section>
+				<a class="btn primary" href="docs/curriculumn_vitae%20for%20bhekinkosiPraiseMoyo.pdf" download>Download CV</a>
+			</div>
+			<iframe src="docs/curriculumn_vitae%20for%20bhekinkosiPraiseMoyo.pdf" title="Bhekinkosi Praise Moyo CV preview"></iframe>
+		</section>
 
-			<section class="colorlib-about" data-section="about">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="col-md-12">
-									<div class="about-desc">
-										<span class="heading-meta">About Me</span>
-										<h2 class="colorlib-heading">Who Am I?</h2>
-										<p><strong>Hi I'm Bhekinkosi Praise Moyo</strong> On a quest to get the most out of Big Data that is being generated daily everytime we use any digital resource. He is also an aspriring data scientist in the making known to have brilliant both passive and technical skills such as problem solving, critical thinking, teamwork, analytical skills, resilient in nature including all other mentioned below. I have taken sufficient amount of time studying and completed my four year BSc degree program in Data Science and Informatics at Midlands State Univerisity which has enabled me to be able to tacklle any problem intended to be solved using Data Science and Analytics while utilizing Machine Learning Algorithms, Statistics, Mathematics among other relevant tools.</p>
-										<h5><b>SWEET</b><em>Nugget</em></h5>
-										<p><b>It is known and I have grown to understand that</b>,<em>"Data cleaning and preprocessing take up around 80% of a data scientist's time. High-quality data is the foundation of accurate models and meaningful insights."</em></p>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-									<div class="services color-1">
-										<span class="icon2"><i class="icon-bulb"></i></span>
-										<h3>Data Analysis</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-									<div class="services color-2">
-										<span class="icon2"><i class="icon-globe-outline"></i></span>
-										<h3>ETL</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
-									<div class="services color-3">
-										<span class="icon2"><i class="icon-data"></i></span>
-										<h3>ML and AI</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-									<div class="services color-4">
-										<span class="icon2"><i class="icon-phone3"></i></span>
-										<h3>Statistical Analysis</h3>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-									<div class="hire">
-										<h2>I am happy to know you <br>that <span id="projectCount">7</span> projects were done sucessfully!</h2>
-										<a href="mailto:bhekinkosipraisem@gmail.com?subject=I%20am%20interested%20in%20hiring%20you" class="btn-hire">Hire me</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+	<section class="section contact section-reveal" id="contact">
+		<img class="contact-media" src="images/about.jpg" alt="" aria-hidden="true">
+		<div class="contact-overlay"></div>
+		<div class="section-heading">
+				<p class="eyebrow">Contact</p>
+				<h2>Let us talk about a data project.</h2>
+			</div>
+			<div class="contact-grid">
+				<div class="contact-panel">
+					<a href="mailto:bhekinkosipraisem@gmail.com">bhekinkosipraisem@gmail.com</a>
+					<a href="https://api.whatsapp.com/send?phone=263787459664&text=I%20saw%20your%20portfolio%20and%20I%20am%20interested%20in%20hiring%20you" target="_blank" rel="noreferrer">+263 787 459 664</a>
+					<a href="https://github.com/becky-moyo" target="_blank" rel="noreferrer">github.com/becky-moyo</a>
+					<a href="https://www.linkedin.com/in/bhekinkosi-praise-moyo-214553396/" target="_blank" rel="noreferrer">LinkedIn Profile</a>
 				</div>
-			</section>
+				<form class="contact-form" action="https://formspree.io/f/xjkjbroo" method="POST" data-contact-form>
+					<label>Name<input type="text" name="name" autocomplete="name" required></label>
+					<label>Email<input type="email" name="email" autocomplete="email" required></label>
+					<label>Subject<input type="text" name="subject" required></label>
+					<label>Message<textarea name="message" rows="6" required></textarea></label>
+					<button class="btn primary" type="submit">Send Message</button>
+				</form>
+			</div>
+		</section>
+	</main>
 
+	<footer class="site-footer">
+		<p>Copyright 2026 Bhekinkosi Praise Moyo. All rights reserved.</p>
+	</footer>
 
-			
-			<section class="colorlib-services" data-section="services">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">What I do?</span>
-							<h2 class="colorlib-heading">Here are some of my expertise</h2>
-						</div>
-					</div>
-					<div class="row row-pt-md">
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-1">
-								<span class="icon">
-									<i class="icon-bulb"></i>
-								</span>
-								<div class="desc">
-									<h3>Data Analysis</h3>
-									<p>Have one year work experience working as an SIE at Zvandiri PVO. Have also mastered the data analysis pipeline from data collection to reporting and presentation</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-2">
-								<span class="icon">
-									<i class="icon-data"></i>
-								</span>
-								<div class="desc">
-									<h3>ETL </h3>
-									<p>Data for use is not always available thus why i have ingested sufficient time comprehensively understand these concepts. Since it is obtained from various, it can be messy thus the need for ETL.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-3">
-								<span class="icon">
-									<i class="icon-phone3"></i>
-								</span>
-								<div class="desc">
-									<h3>ML and AI</h3>
-									<p> Solutions that drive efficiency, automation, and data-driven decision-making are at the center of my work i.e predictive models, AI-powered chatbots for service delivery, and AI Agents for awareness and engagement.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-4">
-								<span class="icon">
-									<i class="icon-layers2"></i>
-								</span>
-								<div class="desc">
-									<h3>Statistical Analysis</h3>
-									<p>I am capable of performing hypothesis testing, regression analysis and data modeling to extract meaningful insights from complex datasets.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-5">
-								<span class="icon">
-									<i class="icon-data"></i>
-								</span>
-								<div class="desc">
-									<h3>Data Visualization</h3>
-									<p>I specialize in transforming complex datasets into clear, compelling and interactive visualizations that make data-driven decision-making easier.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-6">
-								<span class="icon">
-									<i class="icon-phone3"></i>
-								</span>
-								<div class="desc">
-									<h3>Data Engineering</h3>
-									<p>My expertise includes data cleaning, ETL processes, database management and optimizing data structures for efficiency and scalability.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="colorlib-skills" data-section="skills">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">My Specialty</span>
-							<h2 class="colorlib-heading animate-box">My Skills</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<p>Data scientists have access to a vast ecosystem of tools and frameworks—ranging from Python libraries like Pandas, Scikit-learn, and TensorFlow to cloud platforms and big data technologies—enabling them to tackle diverse tasks such as data preprocessing, machine learning, visualization, and deployment with efficiency and scalability. </p>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Python</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="85"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-								    <span>85%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>R</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="35"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:35%">
-								    <span>35%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>PowerBI/Tableau</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="75"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
-								    <span>75%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>Excel</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-								    <span>90%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Flask</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="65"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:65%">
-								    <span>65%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>Streamlit</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-								    <span>80%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>IBM SPSS</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-7" role="progressbar" aria-valuenow="80"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-								    <span>80%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>Github</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="65"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:65%">
-								    <span>65%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="colorlib-education" data-section="education">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Education</span>
-							<h2 class="colorlib-heading animate-box">Education</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<div class="fancy-collapse-panel">
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingOne">
-									        <h4 class="panel-title">
-									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Bachelor of Commerce in Data Science and Informatics
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-									         <div class="panel-body">
-									            <div class="row">
-										      		<div class="col-md-6">
-										      			<p>Graduated with first class degree at Midlands State University in 2026</p>
-										      		</div>
-										      		<div class="col-md-6">
-										      			<p>From May 2022 to November2025</p>
-										      		</div>
-										      	</div>
-										      	<p class="education-skills-title">Skills Gained</p>
-										      	<ul class="education-skills">
-										      		<li>Data analysis, statistical modeling, and evidence-based decision-making</li>
-										      		<li>Machine learning model development, evaluation, and interpretation</li>
-										      		<li>Database management, data cleaning, and ETL workflow design</li>
-										      		<li>Business intelligence reporting and communicating insights to stakeholders</li>
-										      		<li>Applied programming for analytics and real-world problem solving</li>
-										      	</ul>
-										      	<div class="row">
-										      		<div class="col-md-12">
-										      			<p><a href="transcript.html" class="btn btn-primary btn-sm">View Transcript</a></p>
-										      		</div>
-										      	</div>
-									         </div>
-									    </div>
-									</div>
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingThree">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Introduction to machine learning with Kaggle
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-									        <div class="panel-body">
-									            <p>Gained this certification in October 2024</p>
-									            <p class="education-skills-title">Skills Gained</p>
-									            <ul class="education-skills">
-									            	<li>Supervised learning fundamentals for classification and regression</li>
-									            	<li>Feature selection, model validation, and performance interpretation</li>
-									            	<li>Practical use of machine learning workflows in Kaggle notebooks</li>
-									            	<li>Structured experimentation and iterative model improvement</li>
-									            </ul>
-									            <p><a href="docs/Bhekinkosi Moyo - Intro to Machine Learning.png" target="_blank" class="btn btn-primary btn-sm">View Certificate</a></p>
-									        </div>
-									    </div>
-									</div>
-
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingFour">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">IBM SKILLSBUILD AI FUNDAMENTALS
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-									        <div class="panel-body">
-									            <p>Gained this certification in January 2025</p>
-									            <p class="education-skills-title">Skills Gained</p>
-									            <ul class="education-skills">
-									            	<li>Foundational AI concepts, including machine learning and neural networks</li>
-									            	<li>Responsible AI principles, ethics, and bias awareness in deployment</li>
-									            	<li>AI use-case identification for business and social impact scenarios</li>
-									            	<li>Core understanding of data-driven problem framing and solution design</li>
-									            </ul>
-									            <p><a href="docs/AI_Fundamentals_with_IBM_SkillsBuild_certififate.pdf" target="_blank" class="btn btn-primary btn-sm">View Certificate</a></p>
-									        </div>
-									    </div>
-									</div>
-
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingSix">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Data Analytics Essentials
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-									        <div class="panel-body">
-									            <p>Gained this certification in March 2026</p>
-									            <p class="education-skills-title">Skills Gained</p>
-									            <ul class="education-skills">
-									            	<li>Data preparation, cleaning, and transformation for reliable analysis</li>
-									            	<li>Exploratory data analysis to identify trends, outliers, and patterns</li>
-									            	<li>Data visualization techniques for clear storytelling and reporting</li>
-									            	<li>Analytical thinking for converting business questions into data tasks</li>
-									            </ul>
-									            <p><a href="docs/DataAnalyticsEssentialsCertification.pdf" target="_blank" class="btn btn-primary btn-sm">View Certificate</a></p>
-									        </div>
-									    </div>
-									</div>
-
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingFive">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">High School Secondary Education
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-									        <div class="panel-body">
-									            <p>I excelled in both my <strong>'O' Level</strong> and  <strong>'A' Level</strong>. I passed my O's with <strong>seven(<em>7</em>)</strong> including <strong>Mathematics</strong>(<em>A</em>),<strong>English</strong>(<em>B</em>) and <strong>Combined Science</strong><em>(A)</em> and A's with <strong>11</strong>poInts</p>	
-									            <p class="education-skills-title">Skills Gained</p>
-									            <ul class="education-skills">
-									            	<li>Strong quantitative reasoning from mathematics and science coursework</li>
-									            	<li>Written and verbal communication skills built through language studies</li>
-									            	<li>Discipline, consistency, and time management under exam-based deadlines</li>
-									            	<li>Critical thinking and problem-solving across technical subjects</li>
-									            </ul>
-									            <p><a href="docs/Certified Copies For Bhekinkosi PraiseMoyo.pdf" target="_blank" class="btn btn-primary btn-sm">View Certified Copies</a></p>
-									        </div>
-									    </div>
-									</div>
-
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="colorlib-experience" data-section="experience">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Experience</span>
-							<h2 class="colorlib-heading animate-box">Work Experience</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-				         <div class="timeline-centered">
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-
-					               <div class="timeline-icon color-1">
-					                  <i class="icon-pen2"></i>
-					               </div>
-
-					               <div class="timeline-label">
-					                  <h2><a href="#">Strategic Information and Evaluation Officer</a> <span>January 2024 to December 2024</span></h2>
-					                  <p>Assisted in spearheading, monitor and track progress of various researches while utilizing a data scientist's package</p>
-					               </div>
-					            </div>
-					         </article>
-
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-2">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Researcher</a> <span>2022 to date</span></h2>
-					                  <p>I was involved in a team that conducted primary researches through research completion that include the project start and its endline</p>
-					               </div>
-					            </div>
-					         </article>
-
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-4">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Excel Data Analyst</a> <span>2022 to 2025</span></h2>
-					                  <p>Applied excel advanced techniques such Pivot Charts, Pivot tables, Excel Macro, What If Analysis and basic excel functions including X, V and H -Look Up functions</p>
-					               </div>
-					            </div>
-					         </article>
-
-
-					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-none">
-					               </div>
-					            </div>
-					         </article>
-					      </div>
-					   </div>
-				   </div>
-				</div>
-			</section>
-
-			<section class="colorlib-work" data-section="work">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">My Work</span>
-							<h2 class="colorlib-heading animate-box">Recent Work</h2>
-						</div>
-					</div>
-					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-						<div class="col-md-12">
-							<p class="work-menu"><span><a href="#" class="active" data-filter="*">All Projects</a></span> <span><a href="#" data-filter=".ml-models">ML and AI Models</a></span> <span><a href="#" data-filter=".web-apps">Web Applications</a></span></p>
-						</div>
-					</div>
-					<div class="row">
-						<p style="text-align: center;">Hover over the cards to get more information</p>
-						<!-- Employee Skill Gap Analysis - Web App -->
-						<div class="col-md-6 animate-box web-apps" data-animate-effect="fadeInLeft">
-							<div class="project" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; min-height: 300px;">
-								<div class="desc" style="text-align: center; color: white;">
-									<div class="con">
-										<i class="icon-globe-outline" style="font-size: 48px; margin-bottom: 20px;"></i>
-										<h3><a href="#" style="color: white;">Employee Skill Gap Analysis</a></h3>
-										<span>Web Application</span>
-										<p>Flask-based platform utilizing KNN algorithm, web scraping, and NLTK for analyzing employee skill gaps and providing targeted training recommendations.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Banking Service Platform - Web App -->
-						<div class="col-md-6 animate-box web-apps" data-animate-effect="fadeInRight">
-							<div class="project" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; min-height: 300px;">
-								<div class="desc" style="text-align: center; color: white;">
-									<div class="con">
-										<i class="icon-data" style="font-size: 48px; margin-bottom: 20px;"></i>
-										<h3><a href="#" style="color: white;">Banking Service Platform</a></h3>
-										<span>Web Application</span>
-										<p>Flask-powered analytical platform featuring fine-tuned FinBERT model for financial sentiment analysis and banking service optimization.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Analytical Banking Platform - Web App -->
-						<div class="col-md-6 animate-box web-apps" data-animate-effect="fadeInTop">
-							<div class="project" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; min-height: 300px;">
-								<div class="desc" style="text-align: center; color: white;">
-									<div class="con">
-										<i class="icon-layers2" style="font-size: 48px; margin-bottom: 20px;"></i>
-										<h3><a href="#" style="color: white;">Analytical Banking Platform</a></h3>
-										<span>Web Application</span>
-										<p>Real-time banking analytics platform for user behavioral profiling, anomaly detection, and suspicious activity monitoring with advanced security features.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- KNN Model - ML -->
-						<div class="col-md-6 animate-box ml-models" data-animate-effect="fadeInBottom">
-							<div class="project" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); display: flex; align-items: center; justify-content: center; min-height: 300px;">
-								<div class="desc" style="text-align: center; color: white;">
-									<div class="con">
-										<i class="icon-bulb" style="font-size: 48px; margin-bottom: 20px;"></i>
-										<h3><a href="#" style="color: white;">KNN Classification Model</a></h3>
-										<span>Machine Learning</span>
-										<p>K-Nearest Neighbors algorithm implementation for employee skill classification and gap analysis with NLTK-powered text processing capabilities.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- FinBERT Model - ML -->
-						<div class="col-md-6 animate-box ml-models" data-animate-effect="fadeInLeft">
-							<div class="project" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); display: flex; align-items: center; justify-content: center; min-height: 300px;">
-								<div class="desc" style="text-align: center; color: #333;">
-									<div class="con">
-										<i class="icon-phone3" style="font-size: 48px; margin-bottom: 20px;"></i>
-										<h3><a href="#" style="color: #333;">Fine-tuned FinBERT Model</a></h3>
-										<span>Machine Learning</span>
-										<p>Customized FinBERT transformer model for financial sentiment analysis and banking service evaluation with enhanced domain-specific performance.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Ensemble Model - ML -->
-						<div class="col-md-6 animate-box ml-models" data-animate-effect="fadeInRight">
-							<div class="project" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); display: flex; align-items: center; justify-content: center; min-height: 300px;">
-								<div class="desc" style="text-align: center; color: #333;">
-									<div class="con">
-										<i class="icon-settings" style="font-size: 48px; margin-bottom: 20px;"></i>
-										<h3><a href="#" style="color: #333;">LSTM-Isolation Forest-Random Forest Ensemble</a></h3>
-										<span>Machine Learning</span>
-										<p>Advanced ensemble model combining LSTM, Isolation Forest, and Random Forest for comprehensive anomaly detection and behavioral analysis in banking systems.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box">
-							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Go Home<i class="icon-reload"></i></a></p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="colorlib-contact" data-section="contact">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Get in Touch</span>
-							<h2 class="colorlib-heading">Contact</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-5">
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-globe-outline"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="mailto:bhekinkosipraisem@gmail.com?subject=I%20am%20interested%20in%20hiring%20you">bhekinkosipraisem@gmail.com</a></p>
-								</div>
-							</div>
-
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-map"></i>
-								</div>
-								<div class="colorlib-text">
-									<p>3147 Mapfungautsi, Gokwe South</p>
-								</div>
-							</div>
-
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-phone"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="https://api.whatsapp.com/send?phone=263787459664&text=I%20saw%20your%20portfolio%20and%20I%20am%20interested%20in%20hiring%20you">+263787459664</a></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-7 col-md-push-1">
-							<div class="row">
-								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-									<form action="https://formspree.io/f/xjkjbroo" method="POST" id="contactForm">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Name" name="name" required>
-										</div>
-										<div class="form-group">
-											<input type="email" class="form-control" placeholder="Email" name="email" required>
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Subject" name="subject" required>
-										</div>
-										<div class="form-group">
-											<textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
-										</div>
-										<div class="form-group">
-											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
-										</div>
-									</form>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</div><!-- end:colorlib-main -->
-	</div><!-- end:container-wrap -->
-	</div><!-- end:colorlib-page -->
-
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
-	
-	
-	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
-	
-	<script>
-		document.getElementById('contactForm').addEventListener('submit', function(e) {
-			const name = document.querySelector('input[name="name"]').value;
-			const email = document.querySelector('input[name="email"]').value;
-			const subject = document.querySelector('input[name="subject"]').value;
-			const message = document.querySelector('textarea[name="message"]').value;
-			
-			// Validation
-			if (!email.includes('@')) {
-				e.preventDefault();
-				alert('Please enter a valid email address with @');
-				return;
-			}
-			if (/^\d+$/.test(name.trim())) {
-				e.preventDefault();
-				alert('Name cannot contain only numbers');
-				return;
-			}
-			if (/^\d+$/.test(subject.trim())) {
-				e.preventDefault();
-				alert('Subject cannot contain only numbers');
-				return;
-			}
-			if (/^\d+$/.test(message.trim())) {
-				e.preventDefault();
-				alert('Message cannot contain only numbers');
-				return;
-			}
-			
-			// Form will submit to Formspree automatically
-		});
-		
-		// Project filtering functionality
-		document.querySelectorAll('.work-menu a').forEach(function(link) {
-			link.addEventListener('click', function(e) {
-				e.preventDefault();
-				
-				// Remove active class from all links
-				document.querySelectorAll('.work-menu a').forEach(function(a) {
-					a.classList.remove('active');
-				});
-				
-				// Add active class to clicked link
-				this.classList.add('active');
-				
-				// Get filter value
-				const filter = this.getAttribute('data-filter');
-				
-				// Show/hide projects based on filter
-				document.querySelectorAll('.project').forEach(function(project) {
-					const projectContainer = project.closest('.col-md-6');
-					if (filter === '*') {
-						projectContainer.style.display = 'block';
-					} else {
-						if (projectContainer.classList.contains(filter.substring(1))) {
-							projectContainer.style.display = 'block';
-						} else {
-							projectContainer.style.display = 'none';
-						}
-					}
-				});
-			});
-		});
-		
-		// Auto-count projects
-		const projectCount = document.querySelectorAll('.project').length;
-		document.getElementById('projectCount').textContent = projectCount;
-		
-		// Typewriter effect
-		const typewriterText = [
-			"Data Scientist & Analytics Expert",
-			"Machine Learning Engineer",
-			"Statistical Analysis Specialist",
-			"Data Visualization Expert"
-		];
-		
-		let textIndex = 0;
-		let charIndex = 0;
-		let isDeleting = false;
-		const typeSpeed = 100;
-		const deleteSpeed = 50;
-		const pauseTime = 2000;
-		
-		function typeWriter() {
-			const currentText = typewriterText[textIndex];
-			const typewriterElement = document.getElementById('typewriter');
-			
-			if (!isDeleting) {
-				typewriterElement.textContent = currentText.substring(0, charIndex + 1);
-				charIndex++;
-				
-				if (charIndex === currentText.length) {
-					isDeleting = true;
-					setTimeout(typeWriter, pauseTime);
-					return;
-				}
-			} else {
-				typewriterElement.textContent = currentText.substring(0, charIndex - 1);
-				charIndex--;
-				
-				if (charIndex === 0) {
-					isDeleting = false;
-					textIndex = (textIndex + 1) % typewriterText.length;
-				}
-			}
-			
-			setTimeout(typeWriter, isDeleting ? deleteSpeed : typeSpeed);
-		}
-		
-		// Start typewriter effect
-		typeWriter();
-		
-		// Social links hover effects
-		document.querySelectorAll('.social-links a').forEach(function(link) {
-			link.addEventListener('mouseenter', function() {
-				this.style.transform = 'scale(1.2)';
-				this.style.color = '#2c98f0';
-			});
-			link.addEventListener('mouseleave', function() {
-				this.style.transform = 'scale(1)';
-				this.style.color = '#fff';
-			});
-		});
-	</script>
-
-	</body>
+	<button class="back-to-top" type="button" data-back-to-top aria-label="Back to top">
+		<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4 2 14h6v6h8v-6h6L12 4Z"/></svg>
+	</button>
+	<script src="js/modern.js"></script>
+</body>
 </html>
-

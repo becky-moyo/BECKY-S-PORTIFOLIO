@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Employee Skill Gap Analysis | Bhekinkosi Praise Moyo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Case study for an Employee Skill Gap Analysis platform using Flask, KNN, web scraping, and NLTK to identify workforce training needs.">
+	<meta property="og:title" content="Employee Skill Gap Analysis | Bhekinkosi Praise Moyo">
+	<meta property="og:description" content="A workforce analytics case study for identifying employee skill gaps and recommending targeted learning paths.">
+	<meta property="og:image" content="../images/img-1.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/icomoon.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<style>
+		body { background: #f7f9fc; }
+		.case-hero { background-image: linear-gradient(rgba(17, 31, 50, .78), rgba(17, 31, 50, .78)), url("../images/img-1.jpg"); background-size: cover; background-position: center; color: #fff; padding: 90px 0; }
+		.case-hero h1 { color: #fff; font-size: 42px; margin-bottom: 18px; }
+		.case-section { padding: 55px 0; }
+		.case-panel { background: #fff; border-radius: 6px; padding: 28px; margin-bottom: 24px; box-shadow: 0 8px 28px rgba(0,0,0,.06); }
+		.case-panel h2 { font-size: 24px; margin-top: 0; }
+		.badge-list span { display: inline-block; background: #2c98f0; color: #fff; border-radius: 4px; padding: 8px 12px; margin: 0 8px 8px 0; font-size: 13px; }
+		.metric { border-left: 4px solid #2c98f0; padding-left: 16px; margin-bottom: 18px; }
+		.case-visual { width: 100%; border-radius: 6px; margin-bottom: 16px; }
+	</style>
+</head>
+<body>
+	<header class="case-hero">
+		<div class="container">
+			<p><a href="../index.html#work" style="color:#fff;">Back to Portfolio</a></p>
+			<h1>Employee Skill Gap Analysis</h1>
+			<p>Flask-based workforce analytics prototype for identifying employee skill gaps and recommending targeted training pathways.</p>
+			<p>
+				<a class="btn btn-primary" href="https://github.com/becky-moyo/employee-skill-gap-analysis" target="_blank">GitHub</a>
+				<a class="btn btn-default" href="#demo">Demo Notes</a>
+			</p>
+		</div>
+	</header>
+	<main class="case-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="case-panel">
+						<h2>Problem Statement</h2>
+						<p>Organizations often struggle to see which employee skills are missing, which roles are most affected, and which training interventions should be prioritized. This project proposes a structured analytics platform that compares employee capability data with role requirements and produces practical recommendations.</p>
+					</div>
+					<div class="case-panel">
+						<h2>Dataset</h2>
+						<p>The prototype is designed around employee profiles, role descriptions, competency frameworks, training records, and scraped job-market skill requirements. Core features include current skills, target role skills, proficiency levels, department, experience, and training history.</p>
+					</div>
+					<div class="case-panel">
+						<h2>Methodology</h2>
+						<p>The system cleans and standardizes skill text with NLTK, extracts role requirements from structured and scraped sources, and uses K-Nearest Neighbors to compare employee profiles with target competency patterns. Recommendation rules then map the largest gaps to training suggestions.</p>
+					</div>
+					<div class="case-panel">
+						<h2>Results</h2>
+						<div class="metric"><strong>Classification focus:</strong> employee-role fit and priority training categories.</div>
+						<div class="metric"><strong>Decision output:</strong> ranked skill gaps, recommended courses, and department-level capability summaries.</div>
+						<div class="metric"><strong>Business value:</strong> faster workforce planning and clearer learning investment decisions.</div>
+					</div>
+					<div class="case-panel" id="demo">
+						<h2>Screenshots and Demo</h2>
+						<img class="case-visual" src="../images/img-1.jpg" alt="Employee skill gap analysis project visual">
+						<p>The live prototype/demo can be connected here once deployed. For now, this page documents the expected workflow: upload employee data, review detected skill gaps, inspect model recommendations, and export training priorities.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="case-panel">
+						<h2>Tech Stack</h2>
+						<p class="badge-list"><span>Python</span><span>Flask</span><span>KNN</span><span>NLTK</span><span>BeautifulSoup</span><span>Pandas</span><span>Scikit-learn</span></p>
+					</div>
+					<div class="case-panel">
+						<h2>Project Links</h2>
+						<p><a href="https://github.com/becky-moyo/employee-skill-gap-analysis" target="_blank">GitHub Repository</a></p>
+						<p><a href="#demo">Prototype Demo Notes</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

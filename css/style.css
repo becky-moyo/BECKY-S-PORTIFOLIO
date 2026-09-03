@@ -629,6 +629,14 @@ body.offcanvas {
   filter: alpha(opacity=40);
   font-size: 16px; }
 
+.experience-achievements {
+  margin: 12px 0 0;
+  padding-left: 18px; }
+  .experience-achievements li {
+    margin-bottom: 8px;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.7; }
+
 .services {
   margin-bottom: 30px;
   padding: 1.5em;
@@ -819,10 +827,66 @@ body.offcanvas {
       color: #2fa499; }
   .progress-bar.color-6 {
     background: #4054b2; }
-    .progress-bar.color-6:after {
+  .progress-bar.color-6:after {
       background: #4054b2; }
     .progress-bar.color-6 span {
       color: #4054b2; }
+
+.skill-category {
+  min-height: 205px;
+  margin-bottom: 30px;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e9eef5;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 10px 30px -18px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 10px 30px -18px rgba(0, 0, 0, 0.28); }
+  .skill-category h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: #000; }
+    .skill-category h3 i {
+      margin-right: 8px;
+      color: #2c98f0; }
+
+.skill-chips {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 10px; }
+  .skill-chips span {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid #d8e5f2;
+    border-radius: 4px;
+    background: #f6f9fc;
+    color: #2f3a45;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.2;
+    white-space: nowrap; }
+    .skill-chips span:nth-child(3n + 1) {
+      border-color: rgba(44, 152, 240, 0.35);
+      background: rgba(44, 152, 240, 0.08); }
+    .skill-chips span:nth-child(3n + 2) {
+      border-color: rgba(47, 164, 153, 0.35);
+      background: rgba(47, 164, 153, 0.08); }
+    .skill-chips span:nth-child(3n + 3) {
+      border-color: rgba(249, 191, 63, 0.4);
+      background: rgba(249, 191, 63, 0.12); }
+
+@media screen and (max-width: 768px) {
+  .skill-category {
+    min-height: auto;
+    padding: 20px; }
+  .skill-chips span {
+    white-space: normal; } }
 
 .colorlib-feature {
   text-align: left;

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Banking Service Platform | Bhekinkosi Praise Moyo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Case study for a Banking Service Platform using Flask, FinBERT, NLP, and analytics to evaluate financial service feedback.">
+	<meta property="og:title" content="Banking Service Platform | Bhekinkosi Praise Moyo">
+	<meta property="og:description" content="A financial sentiment and service optimization case study powered by FinBERT and Flask.">
+	<meta property="og:image" content="../images/img-2.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/icomoon.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<style>
+		body { background: #f7f9fc; }
+		.case-hero { background-image: linear-gradient(rgba(8, 43, 54, .78), rgba(8, 43, 54, .78)), url("../images/img-2.jpg"); background-size: cover; background-position: center; color: #fff; padding: 90px 0; }
+		.case-hero h1 { color: #fff; font-size: 42px; margin-bottom: 18px; }
+		.case-section { padding: 55px 0; }
+		.case-panel { background: #fff; border-radius: 6px; padding: 28px; margin-bottom: 24px; box-shadow: 0 8px 28px rgba(0,0,0,.06); }
+		.case-panel h2 { font-size: 24px; margin-top: 0; }
+		.badge-list span { display: inline-block; background: #2c98f0; color: #fff; border-radius: 4px; padding: 8px 12px; margin: 0 8px 8px 0; font-size: 13px; }
+		.metric { border-left: 4px solid #2c98f0; padding-left: 16px; margin-bottom: 18px; }
+		.case-visual { width: 100%; border-radius: 6px; margin-bottom: 16px; }
+	</style>
+</head>
+<body>
+	<header class="case-hero">
+		<div class="container">
+			<p><a href="../index.html#work" style="color:#fff;">Back to Portfolio</a></p>
+			<h1>Banking Service Platform</h1>
+			<p>Financial analytics prototype that uses FinBERT-based NLP to evaluate banking service quality from customer feedback.</p>
+			<p>
+				<a class="btn btn-primary" href="https://github.com/becky-moyo/banking-service-platform" target="_blank">GitHub</a>
+				<a class="btn btn-default" href="#demo">Demo Notes</a>
+			</p>
+		</div>
+	</header>
+	<main class="case-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="case-panel">
+						<h2>Problem Statement</h2>
+						<p>Banks receive high volumes of feedback through reviews, support messages, and service channels, but manually interpreting sentiment and recurring pain points is slow. This platform demonstrates how NLP can summarize customer experience signals and guide service improvement.</p>
+					</div>
+					<div class="case-panel">
+						<h2>Dataset</h2>
+						<p>The project is structured for financial customer feedback, complaint categories, service channel labels, transaction context, and manual sentiment labels. The dataset design supports sentiment classification, topic grouping, and service trend analysis.</p>
+					</div>
+					<div class="case-panel">
+						<h2>Methodology</h2>
+						<p>Text is cleaned and prepared for transformer-based classification. A fine-tuned FinBERT model scores sentiment in a banking context, while Flask exposes analysis screens for filtering results by branch, service type, topic, and time period.</p>
+					</div>
+					<div class="case-panel">
+						<h2>Results</h2>
+						<div class="metric"><strong>Model output:</strong> positive, neutral, and negative sentiment classification for financial service text.</div>
+						<div class="metric"><strong>Analytics output:</strong> complaint trends, service pain points, and branch-level feedback summaries.</div>
+						<div class="metric"><strong>Business value:</strong> faster identification of service gaps and clearer prioritization for improvement teams.</div>
+					</div>
+					<div class="case-panel" id="demo">
+						<h2>Screenshots and Demo</h2>
+						<img class="case-visual" src="../images/img-2.jpg" alt="Banking service platform project visual">
+						<p>The demo flow can be connected here once deployed. The intended prototype journey includes importing feedback, running sentiment analysis, reviewing service dashboards, and exporting insight summaries.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="case-panel">
+						<h2>Tech Stack</h2>
+						<p class="badge-list"><span>Python</span><span>Flask</span><span>FinBERT</span><span>NLP</span><span>Pandas</span><span>Transformers</span><span>Dashboarding</span></p>
+					</div>
+					<div class="case-panel">
+						<h2>Project Links</h2>
+						<p><a href="https://github.com/becky-moyo/banking-service-platform" target="_blank">GitHub Repository</a></p>
+						<p><a href="#demo">Prototype Demo Notes</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
