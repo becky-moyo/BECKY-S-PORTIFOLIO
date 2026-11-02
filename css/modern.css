@@ -287,7 +287,7 @@ h1, h2, h3, h4 {
 }
 
 [data-theme='light'] .hero-overlay {
-	background: linear-gradient(135deg, rgba(248, 250, 252, 0.95) 0%, rgba(248, 250, 252, 0.8) 50%, rgba(248, 250, 252, 0.9) 100%);
+	background: linear-gradient(135deg, rgba(248, 250, 252, 0.68) 0%, rgba(248, 250, 252, 0.42) 50%, rgba(248, 250, 252, 0.62) 100%);
 }
 
 .hero-content {
@@ -447,9 +447,8 @@ h1, h2, h3, h4 {
 /* About */
 .about-grid {
 	display: grid;
-	grid-template-columns: 1.4fr 1fr;
-	gap: 32px;
-	margin-bottom: 40px;
+	grid-template-columns: minmax(0, 760px);
+	margin-bottom: 0;
 }
 
 .about-copy p {
@@ -612,6 +611,72 @@ h1, h2, h3, h4 {
 
 .card-actions a:hover {
 	color: var(--accent);
+}
+
+/* Case studies */
+.case-page .container {
+	width: min(100% - 48px, var(--max-width));
+	margin: 0 auto;
+}
+
+.case-page .case-hero {
+	padding: 72px 0;
+	background: var(--bg-elevated);
+	border-bottom: 1px solid var(--border);
+}
+
+.case-page .case-hero h1 {
+	font-size: 48px;
+	margin: 16px 0;
+}
+
+.case-page .case-hero a:not(.btn) {
+	color: var(--accent-bright);
+}
+
+.case-page .case-section {
+	padding: 56px 0 72px;
+}
+
+.case-page .row {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 260px;
+	gap: 56px;
+}
+
+.case-page .col-md-8,
+.case-page .col-md-4 {
+	width: auto;
+	padding: 0;
+}
+
+.case-page .case-panel {
+	padding: 0 0 28px;
+	margin: 0 0 28px;
+	border-bottom: 1px solid var(--border);
+}
+
+.case-page .case-panel h2 {
+	font-size: 22px;
+	margin: 0 0 12px;
+}
+
+.case-page .case-panel p {
+	color: var(--text-muted);
+}
+
+.case-page .badge-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.case-page .badge-list span {
+	padding: 6px 12px;
+	background: var(--accent-soft);
+	border-radius: var(--radius-sm);
+	color: var(--accent-bright);
+	font-size: 13px;
 }
 
 /* Experience Timeline */
@@ -947,6 +1012,19 @@ h1, h2, h3, h4 {
 
 /* Responsive */
 @media (max-width: 768px) {
+	.case-page .row {
+		grid-template-columns: 1fr;
+		gap: 0;
+	}
+
+	.case-page .case-hero {
+		padding: 48px 0;
+	}
+
+	.case-page .case-hero h1 {
+		font-size: 36px;
+	}
+
 	.nav-toggle {
 		display: flex;
 	}

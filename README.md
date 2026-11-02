@@ -8,17 +8,17 @@ Visit the live site: [Portfolio Website](https://becky-moyo.github.io/BECKY-S-PO
 
 ## Technologies Used
 
-- HTML5 and CSS3
-- JavaScript
-- Bootstrap
-- Animate.css
+- HTML5, CSS3, and JavaScript
+- Responsive styling in `css/modern.css`
 - Formspree contact form
 
 ## Featured Projects
 
-- **Employee Skill Gap Analysis** - Flask platform using KNN, NLTK, and web scraping for workforce skill-gap analysis.
-- **Banking Service Platform** - FinBERT-powered financial sentiment analysis and service optimization prototype.
-- **Analytical Banking Platform** - Banking intelligence platform using ensemble ML models for anomaly detection.
+- **Employee Skill Gap Analysis** - Prototype overview using KNN and NLTK to explore workforce skill gaps.
+- **Banking Service Platform** - Prototype overview of FinBERT sentiment analysis for banking feedback.
+- **Analytical Banking Platform** - Prototype overview exploring sequence modeling and anomaly detection.
+
+Project pages describe the intended workflows; evaluation metrics and live demos are not currently published.
 
 ## Contact
 
